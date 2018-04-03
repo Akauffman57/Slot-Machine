@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rules">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RULES:"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="25dp"
+        android:id="@+id/rules"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Click the Spin button to start the game."
+        android:textSize="20dp"
+        android:layout_below="@id/rules"
+        android:id="@+id/r1"
+        android:paddingTop="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Two images of a kind are 20 pts."
+        android:textSize="20dp"
+        android:layout_below="@id/r1"
+        android:id="@+id/r2"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Three images of a kind are 50 pts."
+        android:textSize="20dp"
+        android:layout_below="@id/r2"
+        android:id="@+id/r3"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Click 'Stop' to halt the pictures."
+        android:textSize="20dp"
+        android:layout_below="@id/r3"
+        android:id="@+id/r4"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. There are 5 speeds to the game. 0% is cheats, 1-25% is begginer, 26-75% is medium, 76-99% is hard, 100% is expert."
+        android:textSize="20dp"
+        android:layout_below="@id/r4"
+        android:id="@+id/r5"
+        android:paddingTop="10dp"/>
+
+
+</RelativeLayout>

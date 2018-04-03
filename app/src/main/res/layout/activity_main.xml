@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.SlotMachine.MainActivity">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="1"
+
+        android:layout_margin="10dp"
+        tools:context=".GridXMLActivity">
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:padding="3dp"
+            android:src="@drawable/cookie"
+             />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:padding="3dp"
+            android:src="@drawable/cookie"
+             />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:padding="3dp"
+            android:src="@drawable/cookie"
+             />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GridLayout1"
+        android:id="@+id/linearlayout1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GridLayout1"
+            android:text="POINTS: "
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            android:id="@+id/points"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rules"
+        android:layout_marginBottom="1dp"
+        android:text="SPIN"
+        android:onClick="Start"
+        android:id="@+id/spinner" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="RULES"
+        android:onClick="Rules"
+        android:id="@+id/rules"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout1"
+
+        android:text="Speed:"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/speedlabel"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/speedlabel"
+        android:text="25"
+        android:textSize="25sp"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/speed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/speed"
+        android:text="%"
+        android:textSize="25sp"
+       android:layout_below="@id/linearlayout1"
+        android:layout_marginTop="15dp"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:layout_below="@id/linearlayout1"
+        android:layout_above="@id/spinner"
+        android:layout_marginBottom="25dp"
+        android:max="100"
+        android:min="0"
+        android:progress="25"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</RelativeLayout>
